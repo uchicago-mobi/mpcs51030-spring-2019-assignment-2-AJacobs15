@@ -56,7 +56,6 @@ class ViewController: UIViewController {
             myLabel.textAlignment = .center
             myLabel.center.x = self.view.center.x
             myLabel.font = UIFont(name: "Avenir", size: 20)
-            
         }
         
 
@@ -87,8 +86,6 @@ class ViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Ok", style: .default ))
         self.present(alert, animated: true)
         
-        
-        
     }
 }
 
@@ -108,9 +105,6 @@ extension ViewController: UIScrollViewDelegate{
         
         let myAnimal = animals[curPage]
         myLabel.text = myAnimal.species
-        
-        
-        
         let alph: CGFloat = CGFloat(abs((187.5 - Double(scrollX % 375)) / (375 / 2)))
         
         myLabel.alpha = alph
